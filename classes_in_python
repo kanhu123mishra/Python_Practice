@@ -1,0 +1,16 @@
+
+class Employee:
+    def __init__(self,first,last='xyz',pay=10000):
+        self.first=first
+        self.last=last
+        self.pay=pay
+        self.email=str(first+'.'+last+'@compny.com')
+    def name(self):
+        print(self.first+" "+self.last)
+        
+emp1=Employee('abc',"def")
+type(emp1)
+print(emp1.email)
+print(emp1.pay)
+emp1.name()
+#abc=print(emp1.first+" "+emp1.last)
